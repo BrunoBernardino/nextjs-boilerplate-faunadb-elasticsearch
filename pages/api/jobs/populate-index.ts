@@ -15,6 +15,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   const { data } = await apolloClient.query({
     query: ALL_PRODUCTS,
+    fetchPolicy: 'no-cache',
   });
 
   const products: T.Product[] = _get(data, ['allProducts', 'data'], []);
@@ -24,11 +25,20 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   });
 
   try {
+    await elasticSearchClient.indices.delete({
+      index: 'products',
+    });
+  } catch (error) {
+    // All good, index didn't exist
+  }
+
+  try {
     await elasticSearchClient.indices.create({
       index: 'products',
     });
   } catch (error) {
-    // All good, index already existed
+    console.error(error);
+    console.log(JSON.stringify(error, null, 2));
   }
 
   for (const product of products) {
