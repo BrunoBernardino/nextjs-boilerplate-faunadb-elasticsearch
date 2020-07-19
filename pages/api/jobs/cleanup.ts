@@ -15,6 +15,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   const { data } = await apolloClient.query({
     query: ALL_PRODUCTS,
+    fetchPolicy: 'no-cache',
   });
 
   const products: T.Product[] = _get(data, ['allProducts', 'data'], []);
