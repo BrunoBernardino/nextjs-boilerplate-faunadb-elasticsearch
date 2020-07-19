@@ -66,7 +66,9 @@ const Section = styled.section.attrs({
 
 const Title = styled.h1.attrs({
   className: 'main__title',
-})``;
+})`
+  font-size: 2rem;
+`;
 
 const Paragraph = styled.p.attrs({
   className: 'main__description',

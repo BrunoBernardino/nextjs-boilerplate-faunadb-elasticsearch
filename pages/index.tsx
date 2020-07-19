@@ -32,11 +32,16 @@ const layoutProps = {
 
 const MainTitle = styled.h1.attrs({
   className: 'main__title',
-})``;
+})`
+  font-size: 2rem;
+`;
 
 const Title = styled.h3.attrs({
   className: 'main__title',
-})``;
+})`
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+`;
 
 const Paragraph = styled.p.attrs({
   className: 'main__description',
