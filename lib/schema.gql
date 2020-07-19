@@ -1,0 +1,13 @@
+# File to be imported into FaunaDB
+
+type Product {
+   name: String!
+   slug: String!
+   price: Int!
+   views: Int!
+}
+
+type Query {
+   allProducts: [Product!]
+   findProductBySlug(slug: String!): Product!
+}

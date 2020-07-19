@@ -1,0 +1,17 @@
+name: Job - Populate Index
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Every Monday at 1:10am UTC
+    - cron: '10 1 * * 1'
+
+jobs:
+  job-populate-index:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -X "POST" "https://faunadb-elasticsearch-nextjs-boilerplate.brn.sh/api/jobs/populate-index" \
+              -H 'Content-Type: application/json; charset=utf-8' \
+              -H 'Authorization: Bearer ${{ secrets.JOB_API_KEY }}' \
+              -d $'{}'

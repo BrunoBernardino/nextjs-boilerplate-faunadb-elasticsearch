@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductList renders the list as expected 1`] = `
+<section
+  className="ProductList__StyledProductList-sc-99squt-0 fWWnqk"
+>
+  <article
+    className="Product__StyledProduct-sc-1e37ctb-0 gEmVZS"
+  >
+    <a
+      href="/products/product-1"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      <h3
+        className="Product__Title-sc-1e37ctb-1 kYMdyh main__title"
+      >
+        Product 1
+      </h3>
+      <p
+        className="Product__Paragraph-sc-1e37ctb-2 jkqygI main__description"
+      >
+        Price: 
+        <strong>
+          $
+          15
+        </strong>
+      </p>
+      <p
+        className="Product__Paragraph-sc-1e37ctb-2 jkqygI main__description"
+      >
+        Views: 
+        <strong>
+          0
+        </strong>
+      </p>
+    </a>
+  </article>
+</section>
+`;

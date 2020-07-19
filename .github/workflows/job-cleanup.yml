@@ -1,0 +1,17 @@
+name: Job - Cleanup
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Every Monday at 1:05am UTC
+    - cron: '5 1 * * 1'
+
+jobs:
+  job-cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -X "POST" "https://faunadb-elasticsearch-nextjs-boilerplate.brn.sh/api/jobs/cleanup" \
+              -H 'Content-Type: application/json; charset=utf-8' \
+              -H 'Authorization: Bearer ${{ secrets.JOB_API_KEY }}' \
+              -d $'{}'

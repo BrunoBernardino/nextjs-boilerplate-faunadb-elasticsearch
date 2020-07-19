@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "scope": "brn",
+  "alias": ["faunadb-elasticsearch-nextjs-boilerplate.brn.sh"],
+  "github": {
+    "enabled": false
+  },
+  "env": {
+    "NODE_ENV": "production",
+    "NODE_PATH": "/",
+    "API_URL": "https://faunadb-elasticsearch-nextjs-boilerplate.brn.sh",
+    "JOB_API_KEY": "@faunadb-nextjs-boilerplate-job-api-key",
+    "FAUNADB_READONLY_API_KEY": "@faunadb-nextjs-boilerplate-read-key",
+    "FAUNADB_WRITE_API_KEY": "@faunadb-nextjs-boilerplate-write-key",
+    "ELASTICSEARCH_URL": "@faunadb-nextjs-boilerplate-elasticsearch-url"
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "production",
+      "NODE_PATH": "/",
+      "API_URL": "https://faunadb-elasticsearch-nextjs-boilerplate.brn.sh",
+      "JOB_API_KEY": "@faunadb-nextjs-boilerplate-job-api-key",
+      "FAUNADB_READONLY_API_KEY": "@faunadb-nextjs-boilerplate-read-key",
+      "FAUNADB_WRITE_API_KEY": "@faunadb-nextjs-boilerplate-write-key",
+      "ELASTICSEARCH_URL": "@faunadb-nextjs-boilerplate-elasticsearch-url"
+    }
+  },
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@now/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/favicon.ico",
+      "dest": "/public/favicon.ico"
+    }
+  ]
+}
