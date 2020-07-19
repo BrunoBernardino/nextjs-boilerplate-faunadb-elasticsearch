@@ -29,7 +29,9 @@
     "@types/react-dom": "16.9.8",
     "@types/styled-components": "5.1.1",
     "@zeit/next-sass": "1.0.1",
+    "cross-fetch": "3.0.5",
     "dotenv": "8.2.0",
+    "globby": "11.0.1",
     "graphql": "15.3.0",
     "ky": "0.21.0",
     "ky-universal": "0.8.1",
@@ -41,6 +43,7 @@
     "react-helmet": "6.1.0",
     "react-show": "3.0.4",
     "react-use": "15.3.2",
+    "sitemap": "6.2.0",
     "styled-components": "5.1.1",
     "typescript": "3.9.6"
   },

@@ -37,6 +37,7 @@ Here are some things you will likely want to change before "publishing" this, or
 - [ ] Scope, alias, and env values in `vercel.json`
 - [ ] Values in `.env.sample`
 - [ ] Title, description, and links in this `README.md` file
+- [ ] URL in `public/robots.txt`
 - [ ] URL, env var in `.github/workflows/job-*.yml` files
 - [ ] [Create a secret for `JOB_API_KEY` in your repo](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets#creating-encrypted-secrets-for-a-repository)
 - [ ] URL/headers in `lib/apollo/index.ts`
@@ -46,3 +47,6 @@ Here are some things you will likely want to change before "publishing" this, or
 - [ ] data/logic in `api/jobs/*.ts`
 - [ ] data/logic in `api/v0/search.ts`
 - [ ] data/logic in `api/products/*.tsx`
+- [ ] data/logic in `scripts/build-pages.js`
+- [ ] data/logic in `lambdas/sitemap.ts`
+- [ ] test/remove `pages/api/v0/test-sitemap-lambda.ts` (easy way to test the sitemap locally, by visiting http://localhost:3000/api/v0/test-sitemap-lambda)

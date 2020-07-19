@@ -29,12 +29,16 @@
     {
       "src": "next.config.js",
       "use": "@now/next"
+    },
+    {
+      "src": "/lambdas/*.ts",
+      "use": "@now/node"
     }
   ],
   "routes": [
     {
-      "src": "/favicon.ico",
-      "dest": "/public/favicon.ico"
+      "src": "/sitemap.xml",
+      "dest": "/lambdas/sitemap.ts"
     }
   ]
 }

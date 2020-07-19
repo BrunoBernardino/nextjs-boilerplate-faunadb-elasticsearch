@@ -35,4 +35,5 @@ pretty:
 
 .PHONY: deploy
 deploy:
+	node scripts/build-pages.js
 	vercel --prod

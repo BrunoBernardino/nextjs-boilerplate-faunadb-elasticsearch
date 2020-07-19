@@ -1,4 +1,5 @@
-import { ApolloClient, InMemoryCache } from '@apollo/client';
+import fetch from 'cross-fetch';
+import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';
 
 // Write only from the server
 const apiKey =
@@ -8,10 +9,13 @@ const apiKey =
 
 const client = new ApolloClient({
   ssrMode: typeof window === 'undefined',
-  uri: 'https://graphql.fauna.com/graphql',
-  headers: {
-    authorization: `Bearer ${apiKey}`,
-  },
+  link: new HttpLink({
+    uri: 'https://graphql.fauna.com/graphql',
+    headers: {
+      authorization: `Bearer ${apiKey}`,
+    },
+    fetch,
+  }),
   cache: new InMemoryCache(),
 });
 
