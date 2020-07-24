@@ -16,6 +16,8 @@ The ElasticSearch in the demo is powered by [Bonsai](https://bonsai.io).
 
 Demo at [faunadb-elasticsearch-nextjs-boilerplate.brn.sh](https://faunadb-elasticsearch-nextjs-boilerplate.brn.sh).
 
+See more boilerplates at [nextjs-boilerplates.brn.sh](https://nextjs-boilerplates.brn.sh).
+
 ## Development
 
 ```bash
