@@ -1,14 +1,14 @@
 {
   "version": 2,
   "scope": "brn",
-  "alias": ["faunadb-elasticsearch-nextjs-boilerplate.brn.sh"],
+  "alias": ["faunadb-elasticsearch-nextjs-boilerplate.onbrn.com"],
   "github": {
     "enabled": false
   },
   "env": {
     "NODE_ENV": "production",
     "NODE_PATH": "/",
-    "API_URL": "https://faunadb-elasticsearch-nextjs-boilerplate.brn.sh",
+    "API_URL": "https://faunadb-elasticsearch-nextjs-boilerplate.onbrn.com",
     "JOB_API_KEY": "@faunadb-nextjs-boilerplate-job-api-key",
     "FAUNADB_READONLY_API_KEY": "@faunadb-nextjs-boilerplate-read-key",
     "FAUNADB_WRITE_API_KEY": "@faunadb-nextjs-boilerplate-write-key",
@@ -18,7 +18,7 @@
     "env": {
       "NODE_ENV": "production",
       "NODE_PATH": "/",
-      "API_URL": "https://faunadb-elasticsearch-nextjs-boilerplate.brn.sh",
+      "API_URL": "https://faunadb-elasticsearch-nextjs-boilerplate.onbrn.com",
       "JOB_API_KEY": "@faunadb-nextjs-boilerplate-job-api-key",
       "FAUNADB_READONLY_API_KEY": "@faunadb-nextjs-boilerplate-read-key",
       "FAUNADB_WRITE_API_KEY": "@faunadb-nextjs-boilerplate-write-key",
@@ -28,11 +28,11 @@
   "builds": [
     {
       "src": "next.config.js",
-      "use": "@now/next"
+      "use": "@vercel/next"
     },
     {
       "src": "/lambdas/*.ts",
-      "use": "@now/node"
+      "use": "@vercel/node"
     }
   ],
   "routes": [
