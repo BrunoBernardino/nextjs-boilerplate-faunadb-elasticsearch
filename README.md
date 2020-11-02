@@ -14,9 +14,9 @@ The file with the GraphQL Schema to be imported into FaunaDB is at `lib/schema.q
 
 The ElasticSearch in the demo is powered by [Bonsai](https://bonsai.io).
 
-Demo at [faunadb-elasticsearch-nextjs-boilerplate.brn.sh](https://faunadb-elasticsearch-nextjs-boilerplate.brn.sh).
+Demo at [faunadb-elasticsearch-nextjs-boilerplate.onbrn.com](https://faunadb-elasticsearch-nextjs-boilerplate.onbrn.com).
 
-See more boilerplates at [nextjs-boilerplates.brn.sh](https://nextjs-boilerplates.brn.sh).
+See more boilerplates at [nextjs-boilerplates.onbrn.com](https://nextjs-boilerplates.onbrn.com).
 
 ## Development
 
@@ -26,7 +26,7 @@ make start # starts the app
 make pretty # prettifies the code
 make test # runs linting and tests
 make test/update # runs tests, updating snapshots
-make deploy # deploys to faunadb-elasticsearch-nextjs-boilerplate.brn.sh (requires `vercel` to be installed globally)
+make deploy # deploys to faunadb-elasticsearch-nextjs-boilerplate.onbrn.com (requires `vercel` to be installed globally)
 ```
 
 ## TODOs
