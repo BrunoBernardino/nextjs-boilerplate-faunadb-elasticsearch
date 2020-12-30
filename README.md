@@ -8,7 +8,7 @@ Also supports imports with absolute paths.
 
 All pages are statically generated, meaning they'll be built via server for the first time they're requested (akin to SSR), but the subsequent requests will be as if a pre-rendered static page, incredibly fast (while still being updated after the initial load). This is good for SEO and also for showing up-to-date pages to clients quickly.
 
-The only page that somewhat breaks this pattern is the individual product page, which uses `unstable_revalidate: 1` in `getStaticProps` in order to effectively force a server build every time a page is loaded (technically they're cached for 1 second), so that the view count mutation can happen.
+The only page that somewhat breaks this pattern is the individual product page, which uses `revalidate: 1` in `getStaticProps` in order to effectively force a server build every time a page is loaded (technically they're cached for 1 second), so that the view count mutation can happen.
 
 The file with the GraphQL Schema to be imported into FaunaDB is at `lib/schema.qgl`.
 

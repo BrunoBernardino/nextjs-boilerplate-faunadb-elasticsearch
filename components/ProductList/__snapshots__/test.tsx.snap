@@ -2,10 +2,10 @@
 
 exports[`ProductList renders the list as expected 1`] = `
 <section
-  className="ProductList__StyledProductList-sc-99squt-0 fWWnqk"
+  className="ProductList__StyledProductList-sc-99squt-0 ebFvpW"
 >
   <article
-    className="Product__StyledProduct-sc-1e37ctb-0 gEmVZS"
+    className="Product__StyledProduct-sc-1e37ctb-0 jBesfk"
   >
     <a
       href="/products/product-1"
@@ -13,12 +13,12 @@ exports[`ProductList renders the list as expected 1`] = `
       onMouseEnter={[Function]}
     >
       <h3
-        className="Product__Title-sc-1e37ctb-1 kYMdyh main__title"
+        className="Product__Title-sc-1e37ctb-1 main__title"
       >
         Product 1
       </h3>
       <p
-        className="Product__Paragraph-sc-1e37ctb-2 jkqygI main__description"
+        className="Product__Paragraph-sc-1e37ctb-2 main__description"
       >
         Price: 
         <strong>
@@ -27,7 +27,7 @@ exports[`ProductList renders the list as expected 1`] = `
         </strong>
       </p>
       <p
-        className="Product__Paragraph-sc-1e37ctb-2 jkqygI main__description"
+        className="Product__Paragraph-sc-1e37ctb-2 main__description"
       >
         Views: 
         <strong>

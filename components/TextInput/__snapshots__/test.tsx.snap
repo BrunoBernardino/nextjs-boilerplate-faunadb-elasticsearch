@@ -2,7 +2,7 @@
 
 exports[`TextInput renders the input as expected 1`] = `
 <input
-  className="TextInput__StyledInput-sc-1779p3-0 bCizkx"
+  className="TextInput__StyledInput-sc-1779p3-0 kaAhff"
   disabled={false}
   id="name"
   name="name"

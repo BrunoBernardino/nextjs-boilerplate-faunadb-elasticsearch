@@ -52,8 +52,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     },
   });
 
-  // NOTE: "unstable_revalidate: 1" makes sure that every 1s this page is rebuilt (calling the mutation to update views). If you don't need the mutation, removing this property will make page loads more performant
-  return { props: { ...product }, unstable_revalidate: 1 };
+  // NOTE: "revalidate: 1" makes sure that every 1s this page is rebuilt (calling the mutation to update views). If you don't need the mutation, removing this property will make page loading time faster
+  return { props: { ...product }, revalidate: 1 };
 };
 
 const Section = styled.section.attrs({
