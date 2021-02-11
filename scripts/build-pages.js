@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const globby = require('globby');
 
-const lambdaPagesFilePath = path.join(__dirname, '..', 'lambdas', 'pages.json');
+const libPagesFilePath = path.join(__dirname, '..', 'lib', 'pages.json');
 
 (async () => {
   // Ignore Next.js specific files (e.g., _app.js) and API routes.
@@ -10,6 +10,7 @@ const lambdaPagesFilePath = path.join(__dirname, '..', 'lambdas', 'pages.json');
     'pages/**/*{.ts,.tsx,.js,.jsx}',
     '!pages/_*.tsx',
     '!pages/api',
+    '!pages/sitemap',
     '!pages/products/search.tsx', // exclude search page
     '!pages/products/[slug].tsx', // exclude dynamic route
   ]);
@@ -26,11 +27,11 @@ const lambdaPagesFilePath = path.join(__dirname, '..', 'lambdas', 'pages.json');
     slugs.push(slug);
   });
 
-  fs.writeFileSync(lambdaPagesFilePath, JSON.stringify(slugs, null, 2), {
+  fs.writeFileSync(libPagesFilePath, JSON.stringify(slugs, null, 2), {
     encoding: 'utf-8',
   });
 
-  console.log(`Built ${lambdaPagesFilePath}!`);
+  console.log(`Built ${libPagesFilePath}!`);
 
   process.exit(0);
 })();

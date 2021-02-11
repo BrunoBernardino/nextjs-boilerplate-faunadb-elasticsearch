@@ -5,7 +5,11 @@ require('dotenv').config();
 module.exports = withSass({
   target: 'serverless',
   env: {
+    API_URL: process.env.API_URL,
+    JOB_API_KEY: process.env.JOB_API_KEY,
     FAUNADB_READONLY_API_KEY: process.env.FAUNADB_READONLY_API_KEY,
+    FAUNADB_WRITE_API_KEY: process.env.FAUNADB_WRITE_API_KEY,
+    ELASTICSEARCH_URL: process.env.ELASTICSEARCH_URL,
   },
   sassLoaderOptions: {
     includePaths: [path.join(__dirname, 'styles')],

@@ -1,0 +1,15 @@
+service:
+  name: brn-nextjs-boilerplate-faunadb-elasticsearch
+
+myNextAppplication:
+  component: "@sls-next/serverless-component@1.18.0"
+  inputs:
+    domain: ["faunadb-elasticsearch-nextjs-boilerplate", "onbrn.com"]
+    build:
+      env:
+        NODE_PATH: "/"
+        API_URL: "https://faunadb-elasticsearch-nextjs-boilerplate.onbrn.com"
+        JOB_API_KEY: "superSecret"
+        FAUNADB_READONLY_API_KEY: "fake"
+        FAUNADB_WRITE_API_KEY: "fake2"
+        ELASTICSEARCH_URL: "http://user:pass@localhost:9200"

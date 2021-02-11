@@ -1,5 +1,6 @@
 node_modules
 .next
 package-lock.json
-.vercel
-lambdas/pages.json
+.serverless
+.serverless_nextjs
+lib/pages.json

@@ -90,7 +90,7 @@ const FeaturedProducts = () => {
         This is a FaunaDB + ElasticSearch boilerplate for Next.js using GitHub
         Actions with curl for the cleanup/reindex crons. With TypeScript,
         SASS/SCSS, Styled Components, Jest, ESLint, Prettier, and deployed with
-        Vercel.
+        Serverless.
       </Paragraph>
       <Title>Search</Title>
       <TextInput
