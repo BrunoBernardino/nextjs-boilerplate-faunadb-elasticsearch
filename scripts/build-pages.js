@@ -10,7 +10,7 @@ const libPagesFilePath = path.join(__dirname, '..', 'lib', 'pages.json');
     'pages/**/*{.ts,.tsx,.js,.jsx}',
     '!pages/_*.tsx',
     '!pages/api',
-    '!pages/sitemap',
+    '!pages/sitemap.xml.ts',
     '!pages/products/search.tsx', // exclude search page
     '!pages/products/[slug].tsx', // exclude dynamic route
   ]);
