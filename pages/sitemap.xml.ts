@@ -60,6 +60,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   };
 };
 
-export default () => {
-  return '';
-};
+const SitemapPage = () => null;
+
+export default SitemapPage;
